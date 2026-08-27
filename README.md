@@ -75,3 +75,15 @@ stock-directory.json
 
 ## v1.6.3
 損益報酬頁改為「總覽／已實現損益／未實現損益／股利・減資／期間統計」分類分頁，避免不同性質的損益混在一起。
+
+
+## v1.6.4 官方收盤價同步
+
+新版不再依賴瀏覽器直接跨網域呼叫 TWSE / TPEx。`.github/workflows/update-market-close.yml` 會在 GitHub 端抓官方資料並產生 `market-close.json`。首次上傳後通常會由 push 自動執行；若未執行，可到 repository 的 **Actions → Update Taiwan market close → Run workflow** 手動同步一次。由於 GitHub 的 `GITHUB_TOKEN` 自動提交不會觸發新的 Pages build，網站在 `github.io` 上也會直接讀取 repository 的 Raw `market-close.json`，因此每日行情提交後不必等待 Pages 重新部署。
+
+
+## v1.6.5 全頁面驗收與 iPad 股票代號輸入
+
+- 已重新檢查所有主要頁面、導覽按鈕、常用新增／修改按鈕與損益報酬分類。
+- iPad 股票代號輸入不再強制純數字鍵盤，可輸入含 L／R／U 等英文字母的 ETF／商品代號。
+- 手動股價仍維持 `text + inputmode=decimal`，避免 iPad PWA 無法叫出數字鍵盤。

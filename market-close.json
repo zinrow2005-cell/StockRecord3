@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "generatedAt": null,
+  "tradingDates": {},
+  "quotes": {},
+  "sourceStatus": {
+    "twse": {
+      "ok": false,
+      "message": "Waiting for GitHub Actions first sync"
+    },
+    "tpex": {
+      "ok": false,
+      "message": "Waiting for GitHub Actions first sync"
+    }
+  }
+}

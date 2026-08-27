@@ -1,0 +1,9 @@
+v1.6.4｜官方收盤價同步與 iPad 輸入修正
+
+1. 官方收盤價改為 GitHub Actions 伺服器端抓取 TWSE / TPEx，再由網站同網域讀取 market-close.json，避開 Safari / GitHub Pages 跨網域限制。
+2. 上傳新版後 push 會自動觸發第一次同步；也可在 GitHub Actions 手動執行 Update Taiwan market close。
+3. 平日台灣時間約 15:30、17:30 自動同步兩次。
+4. 若單一官方來源暫時失敗，保留該市場上一次成功資料，不會整批清空。
+5. iPad 手動股價輸入改用 text + inputmode=decimal，避免 type=number 在部分 iPad Safari / PWA 無法叫出數字鍵盤。
+6. 加入觸控裝置輸入框尺寸、文字選取與 touch-action 相容調整。
+7. PWA 快取更新至新版，market-close.json 強制走網路避免讀到舊行情。

@@ -54,3 +54,8 @@
 @media (max-width:980px){.performance-section-tabs{top:78px;grid-template-columns:repeat(5,minmax(110px,1fr));overflow-x:auto;scrollbar-width:thin}.performance-section-tab{min-width:110px}.performance-overview-summary{grid-template-columns:repeat(2,minmax(0,1fr))}.focused-metrics,.unrealized-focus-card .focused-metrics{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:640px){.performance-section-tabs{top:72px;grid-template-columns:repeat(5,112px);margin-left:-4px;margin-right:-4px;padding:8px;border-radius:17px}.performance-section-tab{min-width:112px;min-height:52px;padding:8px 10px}.performance-section-tab .tab-icon{display:none}.performance-section-tab b{font-size:14px;white-space:nowrap;overflow:visible;text-overflow:clip}.performance-overview-summary{grid-template-columns:1fr}.focused-metrics,.unrealized-focus-card .focused-metrics{grid-template-columns:1fr 1fr}.performance-focus-card .performance-card-result{min-width:0;max-width:48%}}
 @media (max-width:420px){.focused-metrics,.unrealized-focus-card .focused-metrics{grid-template-columns:1fr}.performance-focus-card .performance-card-head{align-items:flex-start}.performance-focus-card .performance-card-result{max-width:52%}}
+
+/* v1.6.4 iPad 手動股價輸入相容 */
+.price-input-row input[inputmode="decimal"]{-webkit-appearance:none;appearance:none;-webkit-user-select:text;user-select:text;touch-action:auto;pointer-events:auto;cursor:text;font-size:18px;line-height:1.3}
+.price-input-row label>div{touch-action:auto}
+@media (pointer:coarse){.price-input-row input[inputmode="decimal"]{min-height:58px;font-size:20px;padding-top:8px;padding-bottom:8px}}
