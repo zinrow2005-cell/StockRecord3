@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#1f6b5a" />
+    <title>目前沒有網路｜安心股票簿</title>
+    <style>
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        min-height: 100dvh;
+        display: grid;
+        place-items: center;
+        padding: calc(24px + env(safe-area-inset-top)) 20px calc(24px + env(safe-area-inset-bottom));
+        background: #fffaf0;
+        color: #17352f;
+        font-family: "Noto Sans TC", "Microsoft JhengHei", system-ui, sans-serif;
+      }
+      main {
+        width: min(100%, 480px);
+        padding: 30px 24px;
+        text-align: center;
+        background: #fff;
+        border: 2px solid #d7e2dd;
+        border-radius: 28px;
+        box-shadow: 0 20px 55px rgba(23, 53, 47, 0.14);
+      }
+      .mark {
+        display: grid;
+        place-items: center;
+        width: 82px;
+        height: 82px;
+        margin: 0 auto 18px;
+        border-radius: 24px;
+        background: #1f6b5a;
+        color: #fff;
+        font-size: 25px;
+        font-weight: 950;
+      }
+      h1 { margin: 0 0 10px; font-size: 29px; }
+      p { margin: 0 0 22px; color: #556b64; font-size: 18px; line-height: 1.7; }
+      button {
+        width: 100%;
+        min-height: 60px;
+        border: 0;
+        border-radius: 17px;
+        background: #ed724c;
+        color: #fff;
+        font: inherit;
+        font-size: 19px;
+        font-weight: 900;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="mark" aria-hidden="true">離線</div>
+      <h1>目前沒有網路</h1>
+      <p>股票紀錄會保存在這支手機。請返回 APP 繼續查看或記錄；官方股票名稱與股利查詢需等恢復連線。</p>
+      <button type="button" onclick="location.href='./'">返回安心股票簿</button>
+    </main>
+  </body>
+</html>
