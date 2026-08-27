@@ -71,3 +71,7 @@ stock-directory.json
 
 - Android Chrome：瀏覽器選單 →「安裝應用程式」或 APP 內的「安裝 APP」。
 - iPhone／iPad Safari：分享 →「加入主畫面」。
+
+
+## v1.6.3
+損益報酬頁改為「總覽／已實現損益／未實現損益／股利・減資／期間統計」分類分頁，避免不同性質的損益混在一起。

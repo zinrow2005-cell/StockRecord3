@@ -32,3 +32,25 @@
   .period-stock-card .performance-metric{padding-left:11px;padding-right:11px}
   .period-stock-card .performance-metric b{font-size:17px}
 }
+
+/* v1.6.3 損益報酬分類分頁 */
+.performance-section-tabs{position:sticky;top:84px;z-index:12;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;margin:0 0 22px;padding:10px;background:rgba(255,250,240,.94);border:1px solid var(--line);border-radius:20px;box-shadow:0 10px 30px rgba(23,53,47,.08);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
+.performance-section-tab{min-width:0;min-height:58px;cursor:pointer;border:1px solid #d7e2dd;background:#fff;color:var(--ink);border-radius:15px;padding:9px 10px;display:flex;align-items:center;justify-content:center;gap:7px;font-weight:900;transition:.16s ease}
+.performance-section-tab .tab-icon{display:grid;place-items:center;flex:0 0 26px;width:26px;height:26px;border-radius:9px;background:#eef5f2;color:var(--green);font-size:14px;font-weight:950}
+.performance-section-tab b{min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.performance-section-tab:hover{border-color:#9fc6b8;transform:translateY(-1px)}
+.performance-section-tab.active{background:var(--green);border-color:var(--green);color:#fff;box-shadow:0 8px 18px rgba(31,107,90,.24)}
+.performance-section-tab.active .tab-icon{background:rgba(255,255,255,.18);color:#fff}
+.performance-tab-tip{margin:2px 0 18px;padding:13px 16px;border:1px solid #cfe1da;background:#f1f8f5;color:#315c52;border-radius:15px;font-size:15px;font-weight:700}
+.focus-title{margin-top:2px}
+.performance-overview-summary{grid-template-columns:repeat(5,minmax(0,1fr))}
+.performance-focus-card .performance-card-head{align-items:center}
+.performance-focus-card .performance-card-result{min-width:180px}
+.focused-metrics{grid-template-columns:repeat(4,minmax(0,1fr))}
+.unrealized-focus-card .focused-metrics{grid-template-columns:repeat(3,minmax(0,1fr))}
+.realized-focus-card{border-top:4px solid #e9b949}
+.unrealized-focus-card{border-top:4px solid #1f6b5a}
+.income-focus-card{border-top:4px solid #8b6db0}
+@media (max-width:980px){.performance-section-tabs{top:78px;grid-template-columns:repeat(5,minmax(110px,1fr));overflow-x:auto;scrollbar-width:thin}.performance-section-tab{min-width:110px}.performance-overview-summary{grid-template-columns:repeat(2,minmax(0,1fr))}.focused-metrics,.unrealized-focus-card .focused-metrics{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:640px){.performance-section-tabs{top:72px;grid-template-columns:repeat(5,112px);margin-left:-4px;margin-right:-4px;padding:8px;border-radius:17px}.performance-section-tab{min-width:112px;min-height:52px;padding:8px 10px}.performance-section-tab .tab-icon{display:none}.performance-section-tab b{font-size:14px;white-space:nowrap;overflow:visible;text-overflow:clip}.performance-overview-summary{grid-template-columns:1fr}.focused-metrics,.unrealized-focus-card .focused-metrics{grid-template-columns:1fr 1fr}.performance-focus-card .performance-card-result{min-width:0;max-width:48%}}
+@media (max-width:420px){.focused-metrics,.unrealized-focus-card .focused-metrics{grid-template-columns:1fr}.performance-focus-card .performance-card-head{align-items:flex-start}.performance-focus-card .performance-card-result{max-width:52%}}

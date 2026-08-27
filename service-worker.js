@@ -1,4 +1,4 @@
-const CACHE_VERSION = "安心股票簿-github-pwa-2026-08-27-15";
+const CACHE_VERSION = "安心股票簿-github-pwa-2026-08-27-16";
 const SHELL_CACHE = `${CACHE_VERSION}-shell`;
 const ASSET_CACHE = `${CACHE_VERSION}-assets`;
 const BASE_URL = new URL("./", self.location.href);
