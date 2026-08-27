@@ -1,7 +1,7 @@
 {
   "name": "安心股票簿",
   "short_name": "股票簿",
-  "description": "長輩也能輕鬆記錄股票交易、股利與持股。",
+  "description": "輕鬆記錄股票交易、股利、公司行動與持股績效。",
   "id": "./",
   "start_url": "./",
   "scope": "./",
