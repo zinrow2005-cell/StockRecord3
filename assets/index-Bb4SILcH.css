@@ -9,3 +9,26 @@
 .period-summary-grid{margin-top:0}.period-cashflow-line{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:2px 14px;align-items:center;padding:13px 15px;border-radius:13px;background:#17352f08;border:1px dashed #bfd2c9}.period-cashflow-line span{font-weight:800}.period-cashflow-line b{font-size:1.1rem}.period-cashflow-line small{grid-column:1/-1;color:var(--muted)}
 .period-stock-details{border:1px solid var(--line);border-radius:14px;background:#fff;overflow:hidden}.period-stock-details>summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:12px;padding:14px 16px}.period-stock-details>summary::-webkit-details-marker{display:none}.period-stock-details>summary span{color:var(--muted);font-size:.88rem}.period-stock-list{display:grid;gap:12px;padding:0 14px 14px}.period-stock-card{margin:0}.period-stock-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}.period-stock-head>div:first-child{display:grid}.period-stock-head>div:first-child b{font-size:1.05rem}.period-stock-head>div:first-child span{color:var(--muted)}.period-stock-head>div:last-child{text-align:right;display:grid}.period-stock-head>div:last-child small{color:var(--muted)}.period-stock-head>div:last-child b{font-size:1.05rem}.section-divider-title{display:flex;align-items:end;justify-content:space-between;gap:12px;margin-top:8px;padding:6px 2px}.section-divider-title b{font-size:1.08rem}.section-divider-title span{color:var(--muted);font-size:.86rem}
 @media(max-width:760px){.period-filter-head{display:grid}.period-income-badge{min-width:0;width:100%;text-align:left}.period-mode-tabs{grid-template-columns:repeat(2,minmax(0,1fr))}.period-picker-row{align-items:stretch}.period-range-label{order:5;width:100%;margin-left:0;text-align:left;padding-top:2px}.period-nav-btn{flex:0 0 42px}.period-main-picker{flex:1;min-width:0}.quarter-picker{flex:1}.quarter-picker input,.quarter-picker select{min-width:0;width:50%}.custom-range-inputs{width:100%;display:grid;grid-template-columns:1fr}.range-arrow{display:none}.custom-range-inputs label input{width:100%}.section-divider-title{display:grid}.period-stock-head{display:grid}.period-stock-head>div:last-child{text-align:left}}
+
+/* v1.6.2 區間股票統計卡片安全邊距修正 */
+.period-stock-details>summary>*{min-width:0}
+.period-stock-details>summary span{overflow-wrap:anywhere;text-align:right}
+.period-stock-card{min-width:0}
+.period-stock-head{min-width:0;padding:18px 20px 16px;border-bottom:1px solid var(--line);background:linear-gradient(120deg,#f7fbf9,#fff)}
+.period-stock-head>div{min-width:0}
+.period-stock-head>div:first-child b,.period-stock-head>div:first-child span,.period-stock-head>div:last-child small,.period-stock-head>div:last-child b{max-width:100%;overflow-wrap:anywhere;word-break:break-word}
+.period-stock-head>div:last-child{padding-left:12px}
+.period-stock-card .performance-metrics{min-width:0}
+.period-stock-card .performance-metric{min-width:0;overflow:hidden}
+.period-stock-card .performance-metric b{max-width:100%;overflow-wrap:anywhere;word-break:break-word;line-height:1.28;font-variant-numeric:tabular-nums}
+@media(max-width:760px){
+  .period-stock-head{padding:16px 17px 15px;row-gap:8px}
+  .period-stock-head>div:last-child{padding-left:0}
+  .period-stock-details>summary{align-items:flex-start}
+}
+@media(max-width:420px){
+  .period-stock-list{padding-left:10px;padding-right:10px}
+  .period-stock-details>summary{padding-left:13px;padding-right:13px}
+  .period-stock-card .performance-metric{padding-left:11px;padding-right:11px}
+  .period-stock-card .performance-metric b{font-size:17px}
+}
